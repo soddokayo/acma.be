@@ -1,6 +1,10 @@
-# 라이브러리
+# pyvenv 관련
+# > pip install -r requirements.txt
+__pycache__/
+bin/
 include/
 lib/
+pyvenv.cfg
 
 # 파일저장된 메모
 memo/
