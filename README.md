@@ -25,7 +25,7 @@ List에 추가될 때는 자동으로 카테고리가 분류되어 들어가는 
 - HuggingFace에서 제공하는 transformers의 "Zero Shot Classification" pipeline을 활용합니다. 
 <br />
 주요 모델인 Memo 객체의 변화를 도식화하면 위와 같습니다.
-![description](./readme/4_ACMA_%EC%84%A4%EB%AA%85.png)
+![description](./readme/4_ACMA_desc.png)
 
 ## 기술스택
 
