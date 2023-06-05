@@ -57,5 +57,7 @@ async def delete_memo(id:str, useFile:bool=False):
         return None
     
 @app.get("/")
+@app.get("/list")
+@app.get("/create")
 def index():
     return FileResponse("build/index.html")
