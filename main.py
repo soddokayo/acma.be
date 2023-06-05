@@ -1,5 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from starlette.responses import FileResponse
+from starlette.staticfiles import StaticFiles
 
 from model import Memo
 from file_crud import create_memo_file, list_memo_file, read_memo_file, update_memo_file, delete_memo_file
@@ -15,6 +17,8 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+app.mount("/static", StaticFiles(directory="build/static"))
 
 @app.post("/api/memo") # Create
 async def create_memo(memo:Memo, useFile:bool=False):
@@ -52,3 +56,6 @@ async def delete_memo(id:str, useFile:bool=False):
     else: # use db
         return None
     
+@app.get("/")
+def index():
+    return FileResponse("build/index.html")

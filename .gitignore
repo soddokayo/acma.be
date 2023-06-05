@@ -3,6 +3,7 @@ __pycache__/
 bin/
 include/
 lib/
+share/
 pyvenv.cfg
 
 # 관련 패키지 전체 설치 방법 :
