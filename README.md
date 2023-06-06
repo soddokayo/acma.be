@@ -1,6 +1,6 @@
 # 📝 ACMA (Auto Classifying Memo App)
 
-주제별로 자동 분류되는 메모 앱
+주제별로 자동 분류되는 메모 앱 => **[접속하기](http://7yr.de:8000)**
 
 ## 설명
 
